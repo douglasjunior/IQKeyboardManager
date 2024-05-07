@@ -28,17 +28,14 @@
     "5.8",
     "5.9"
   ],
-  "source_files": "IQKeyboardManagerSwift/**/*.{swift, xcprivacy}",
-  "resources": "IQKeyboardManagerSwift/PrivacyInfo.xcprivacy",
-  "frameworks": [
-    "UIKit",
-    "Foundation",
-    "CoreGraphics",
-    "QuartzCore"
-  ],
+  "source_files": "IQKeyboardManagerSwift/**/*.{swift}",
+  "resource_bundles": {
+    "IQKeyboardManagerSwift": "IQKeyboardManagerSwift/PrivacyInfo.xcprivacy"
+  },
+  "frameworks": ["UIKit", "Foundation", "CoreGraphics", "QuartzCore"],
   "libraries": "swiftCoreGraphics",
   "xcconfig": {
-      "LIBRARY_SEARCH_PATHS": "$(SDKROOT)/usr/lib/swift"
+    "LIBRARY_SEARCH_PATHS": "$(SDKROOT)/usr/lib/swift"
   },
   "requires_arc": true
 }
